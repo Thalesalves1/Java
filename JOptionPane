@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+
+    public static void main(String[] args) {
+  String name;
+  int idade;
+  
+        name  = JOptionPane.showInputDialog(null,"Qual o seu nome?");
+    
+        idade = Integer.parseInt(JOptionPane.showInputDialog(null, "Digite a sua idade: "));
+   
+    if (idade >= 18){
+     
+        JOptionPane.showMessageDialog(null, name+ "\n"+  " Você já pode tirar CNH!");
+    } else{
+        JOptionPane.showMessageDialog(null, name + "\n"+ " Você ainda não pode tirar CNH, você tem apenas " + idade + "anos");
+    }
+    
+      
+    }
+    
+}
